@@ -1,0 +1,1748 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="description" content="한국인터넷진흥원">
+	<meta name="keywords" content="한국인터넷진흥원">
+	<meta name="classification" content="한국인터넷진흥원">
+	<meta name="author" content="한국인터넷진흥원">
+	<meta name="title" content="한국인터넷진흥원">
+	<meta name="apple-mobile-web-app-title" content="한국인터넷진흥원">
+	<meta name="subject" content="한국인터넷진흥원"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>KISA 한국인터넷진흥원</title>
+	<!--favicon 추가 끝-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+	<link rel="stylesheet" href=css/xeicon.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" media="all">
+	<link rel="stylesheet" href="css/swiper.css" media="all">
+
+	<script type="text/javascript" src="js/jquery-latest.min.js" charset="utf-8"></script>
+	<!-- <script type="text/javascript" src="js/common.js" charset="utf-8"></script> -->
+	<script type="text/javascript" src="js/jquery.fullPage.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<!-- <script type="text/javascript" src="js/slider.js" charset="utf-8"></script> -->
+	
+	<style>
+		#section3{height: auto !important;}
+		#section3 > div{height: auto !important;}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// if (navigator.userAgent.toUpperCase().indexOf('TRIDENT') == -1) {
+				
+			// }
+			$('#fullpage').fullpage({
+					sectionSelector: 'section',
+					anchors: ['firstPage', 'secondPage', '3rdPage','footerPage'],
+					menu: '#menu',
+					responsiveWidth:1400,
+					responsiveHeight:900,
+					recordHistory: true,
+					animateAnchor: false,
+					afterLoad: function (anchorLink, index) {
+						if (index) {
+							$('#menu').show();
+							$('#menu li a').removeClass("color");
+							$('#header').removeClass('white');
+						}
+						if(index==3){
+							$('#header').addClass('white');
+							$('#menu li a').addClass("color");
+						}
+						if(index==4){
+							$('#header').addClass('white');
+							$('#menu').hide();
+						}
+					},
+					afterResponsive: function(isResponsive){
+						$('#header').css('position','absolute');
+					}
+				});
+		});
+	</script>
+	
+	<script>
+		function funcClicked(target){
+			//console.log('clicked'); // A 태그 삽입용
+		}
+	</script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+
+    <!-- Container -->
+    <div id="container">
+
+        <ul id="menu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage" title="메인" class=""><div class="line"></div><p><span>01</span>Main</p></a></li>
+            <li data-menuanchor="secondPage" class=""><a href="#secondPage" title="재단사업" class=""><div class="line"></div><p><span>02</span>Business</p></a></li>
+            <li data-menuanchor="3rdPage" class=""><a href="#3rdPage" title="알림미당" class=""><div class="line"></div><p><span>03</span>News</p></a></li>
+            <li data-menuanchor="footer" style="opacity:0;left: -9999em;"></li>
+        </ul>
+
+        <aside class="side main">
+            <script>function totalSearch(){
+                var openNewWindow = window.open("about:blank");
+                openNewWindow.location.href = "https://search.kisa.or.kr/search/search.jsp";
+            }
+            </script>
+            <div class="sideSearch"><a href="#totalSearch" onclick="totalSearch();" title="새창열림">통합검색</a></div>
+            <div class="topBtn"><a class="moveFullpagesTop" href="#firstPage" title="상단으로 이동">TOP</a></div>
+        </aside>
+
+        <div id="fullpage">
+
+            <section id="section0">
+                <div class="content main_visual">
+                    <h2 class="blind">Main</h2>
+                    <h3 class="blind">KISA 메인페이지</h3>
+                    <figure class="slide_b main_swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="text">
+                                    <h2>Korea Internet &amp; Security Agency</h2>
+                                    <h3>
+                                        [<span class="target only" data-text="KISA"></span> <span class="typing only"> KISA</span>]는 <br>
+                                        안전하고 신뢰할 수 있는 <br>
+                                        <b>디지털 미래사회</b>를 선도합니다.
+                                    </h3>
+                                </div>
+                                <span class="imgs"><img src="images/main_slide_01.jpg" alt=""></span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="text">
+                                    <h2>Korea Internet &amp; Security Agency</h2>
+                                    <h3>
+                                        [ <span class="typing">KISA</span>]와 <br>
+                                        함께 가꾸는 미래 인터넷 <br>
+                                        <b>함께 꿈꾸는 안전한 세상</b>
+                                    </h3>
+                                </div>
+                                <span class="imgs"><img src="images/bg02.jpg" alt=""></span>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="text">
+                                    <h2>Korea Internet &amp; Security Agency</h2>
+                                    <h3>
+                                        <b style="color: #88ff00;text-shadow: 0 0 5px rgb(0 0 0 / 50%);">안전한 디지털 미래</b> <br>
+                                        [ <span class="typing" style="color: #00E7FF;">KISA</span>]가 함께 합니다.
+                                    </h3>
+                                </div>
+                                <span class="imgs"><img src="images/main_slide_03.jpg" alt=""></span>
+                            </li>
+                        </ul>
+
+												<nav>
+													<div class="dot"></div>
+													<div class="paging"><span class="cuN"></span> / <span class="toN"></span></div>
+													<!-- If we need navigation buttons -->
+													<a href="#funcClicked" onclick="funcClicked();" class="btns prev" title="슬라이드 이전"></a>
+													<a href="#funcClicked" onclick="funcClicked();" class="btns pause" title="슬라이드 멈춤"></a>
+													<a href="#funcClicked" onclick="funcClicked();" class="btns next" title="슬라이드 다음"></a>
+												</nav>	
+
+                        <script>
+                            // 메인 - 타이핑
+                            var typingBool = false;
+                            var typingIdx=0;
+                            var typingTxt = $(".swiper-slide .target.only").attr('data-text'); // 타이핑될 텍스트를 가져온다
+                            $(".swiper-slide .typing.only").html(" "); // 내용 초기화
+
+                            typingTxt=typingTxt.split(""); // 한글자씩 자른다.
+                            if(typingBool==false){ // 타이핑이 진행되지 않았다면
+                                typingBool=true;
+                                var tyInt = setInterval(typing,200); // 반복동작
+                            }
+
+                            function typing(){
+                                if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복
+                                    $(".typing.only").append(typingTxt[typingIdx]); // 한글자씩 이어준다.
+                                    typingIdx++;
+                                } else{
+                                    clearInterval(tyInt); //끝나면 반복종료
+                                }
+                            }
+
+                            //메인 슬라이드
+                            var mainSwiper = new Swiper(".main_swiper", {
+                                loop: false,
+                                speed: 1500,
+                                // autoplay: {
+                                //     delay: 5000,
+                                // },
+                                effect : 'fade',
+                                fadeEffect: {
+                                    crossFade: true
+                                },
+                                navigation: {
+                                    nextEl: '.main_swiper .next',
+                                    prevEl: '.main_swiper .prev',
+                                },
+                                pagination: {
+                                    el: '.main_swiper .dot',
+                                    clickable: 'true',
+                                    type: 'bullets',
+                                },
+                                on: {
+                                    slideChange: function () {
+                                        var dotN = $('.main_swiper .dot .swiper-pagination-bullet-active').index();
+                                        var dotN2 = dotN + 1;
+                                        var dotN3 = 0;
+
+                                        (dotN2 < 10 ) ?  dotN3 = "0" + dotN2 : dotN3 = dotN2 ;
+
+                                        $('.paging .cuN').html(dotN3);
+
+                                    },
+                                    slideChangeTransitionStart : function(){
+
+                                    }
+                                },
+                            });
+
+                            // init
+                            var dotTotal = $('.main_swiper .dot .swiper-pagination-bullet').length;
+                            var num1 = 0;
+
+                            (dotTotal < 10) ? num1 = "0" + dotTotal : num1 = dotTotal ;
+
+                            $('.paging .toN').text(num1);
+                            $('.paging .cuN').text('01');
+
+
+                            $('.main_swiper .pause').on('click',function(){
+                                if($(this).hasClass('on')){
+                                    var mainSwiperInnerHtml = '<span class="blind">슬라이드 멈춤</span>';
+                                    $(this).removeClass('on');
+                                    $(this).attr('title','슬라이드 멈춤');
+                                    $(this).html(mainSwiperInnerHtml);
+                                    mainSwiper.autoplay.start();
+                                } else {
+                                    var mainSwiperInnerHtml = '<span class="blind">슬라이드 재생</span>';
+                                    $(this).addClass('on');
+                                    $(this).attr('title','슬라이드 재생');
+                                    $(this).html(mainSwiperInnerHtml);
+                                    mainSwiper.autoplay.stop();
+                                }
+                            })
+                        </script><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </figure>
+
+                    <article class="sec01_mobile_menu">
+                        <ul>
+                            
+                                
+                                    <li class="m_banner_1">
+                                        <div class="top">
+                                            <a href="#funcClicked" onclick="funcClicked();" class="sbj">사이버침해대응본부</a>
+                                            <a href="/801" class="more">더보기</a>
+                                        </div>
+                                        <div class="bott">
+                                            <p>사이버 예방접종은 보안취약점 신고포상제(Bug Bounty) 국민의 PC건강 지킴이! 내PC 돌보미</p>
+                                        </div>
+                                    </li>
+                                
+                            
+                                
+                                    <li class="m_banner_2">
+                                        <div class="top">
+                                            <a href="#funcClicked" onclick="funcClicked();" class="sbj">개인정보보호본부</a>
+                                            <a href="/802" class="more">더보기</a>
+                                        </div>
+                                        <div class="bott">
+                                            <p>프라이버시 보호 기본기, 정보주체·처리자 개인정보보호 교육 글로벌 개인정보 규제 준수의 One-Stop 솔루션 GDPR 대응지원센터</p>
+                                        </div>
+                                    </li>
+                                
+                            
+                                
+                                    <li class="m_banner_3">
+                                        <div class="top">
+                                            <a href="#funcClicked" onclick="funcClicked();" class="sbj">디지털보안산업본부</a>
+                                            <a href="/803" class="more">더보기</a>
+                                        </div>
+                                        <div class="bott">
+                                            <p>디지털 보안기술의 연구 파트너! KISA 보안 테스트베드와 함께! 디지털 보안 TRUST(신뢰)의 완성! KISA 보안인증과 함께!</p>
+                                        </div>
+                                    </li>
+                                
+                            
+                                
+                                    <li class="m_banner_4">
+                                        <div class="top">
+                                            <a href="#funcClicked" onclick="funcClicked();" class="sbj">디지털기반본부</a>
+                                            <a href="/804" class="more">더보기</a>
+                                        </div>
+                                        <div class="bott">
+                                            <p>블록체인과 페이퍼리스가 디지털 대전환을 선도합니다. 국가DNS 무중단 운영 20년! 안전한 디지털 사회의 초석</p>
+                                        </div>
+                                    </li>
+                                
+                            
+                        </ul>
+                    </article>
+                    <script>
+                        //모바일 배너 아코디언
+                        $('.sec01_mobile_menu .sbj').on('click',function(){
+                            if($(this).hasClass('on')){
+                                initBanner();
+                                $(this).removeClass('on');
+                                $(this).parent().next('.bott').slideUp();
+                            } else{
+                                initBanner();
+                                $(this).addClass('on');
+                                $(this).parent().next('.bott').slideDown();
+                            }
+                        })
+
+                        function initBanner(){
+                            $('.sec01_mobile_menu .sbj').removeClass('on')
+                            $('.sec01_mobile_menu .bott').stop().slideUp();
+                        }
+                    </script>
+
+                    <div class="scrollDown">
+                        <div class="border"><span class="moveYani"></span></div>
+                        <p>Scroll Down</p>
+                    </div>
+
+
+                    <!-- 추가 - 메인 팝업 띄우기 -->
+                    <!-- <button type="button" class="btn_popUp" onclick="main_pop_banner_open(true)" title="메인 팝업">POPUP</button> -->
+
+
+                    <article class="banner">
+                        
+                            <div class="banner_1" style="background: no-repeat url(/banner/getNormalImage.do?banner_seq=10), #f7f7f7 no-repeat url(/resource/kor/images/common/ic_sub_menu_bg2.png) center / auto ">
+                                <a href="/801" title="사이버 예방접종은 보안취약점 신고포상제(Bug Bounty) 국민의 PC건강 지킴이! 내PC 돌보미">
+                                    <span class="blind">사이버 예방접종은 보안취약점 신고포상제(Bug Bounty) 국민의 PC건강 지킴이! 내PC 돌보미}</span>
+                                    <div class="over" style="background: no-repeat url(/banner/getHoverImage.do?banner_seq=10)"></div>
+                                </a>
+                            </div>
+                        
+                            <div class="banner_2" style="background: no-repeat url(/banner/getNormalImage.do?banner_seq=11), #f7f7f7 no-repeat url(/resource/kor/images/common/ic_sub_menu_bg2.png) center / auto ">
+                                <a href="/802" title="프라이버시 보호 기본기, 정보주체·처리자 개인정보보호 교육 글로벌 개인정보 규제 준수의 One-Stop 솔루션 GDPR 대응지원센터">
+                                    <span class="blind">프라이버시 보호 기본기, 정보주체·처리자 개인정보보호 교육 글로벌 개인정보 규제 준수의 One-Stop 솔루션 GDPR 대응지원센터}</span>
+                                    <div class="over" style="background: no-repeat url(/banner/getHoverImage.do?banner_seq=11)"></div>
+                                </a>
+                            </div>
+                        
+                            <div class="banner_3" style="background: no-repeat url(/banner/getNormalImage.do?banner_seq=12), #f7f7f7 no-repeat url(/resource/kor/images/common/ic_sub_menu_bg2.png) center / auto ">
+                                <a href="/803" title="디지털 보안기술의 연구 파트너! KISA 보안 테스트베드와 함께! 디지털 보안 TRUST(신뢰)의 완성! KISA 보안인증과 함께!">
+                                    <span class="blind">디지털 보안기술의 연구 파트너! KISA 보안 테스트베드와 함께! 디지털 보안 TRUST(신뢰)의 완성! KISA 보안인증과 함께!}</span>
+                                    <div class="over" style="background: no-repeat url(/banner/getHoverImage.do?banner_seq=12)"></div>
+                                </a>
+                            </div>
+                        
+                            <div class="banner_4" style="background: no-repeat url(/banner/getNormalImage.do?banner_seq=13), #f7f7f7 no-repeat url(/resource/kor/images/common/ic_sub_menu_bg2.png) center / auto ">
+                                <a href="/804" title="블록체인과 페이퍼리스가 디지털 대전환을 선도합니다. 국가DNS 무중단 운영 20년! 안전한 디지털 사회의 초석">
+                                    <span class="blind">블록체인과 페이퍼리스가 디지털 대전환을 선도합니다. 국가DNS 무중단 운영 20년! 안전한 디지털 사회의 초석}</span>
+                                    <div class="over" style="background: no-repeat url(/banner/getHoverImage.do?banner_seq=13)"></div>
+                                </a>
+                            </div>
+                        
+                    </article>
+                </div>
+            </section>
+
+
+            <section>
+                <div data-bg="03" class="content main_business">
+                    <div class="inner">
+                        <h2>Business</h2>
+                        <h3>KISA 사업</h3>
+                        <article class="n01" data-num="01">
+                            <div class="title">
+                                <p class="num">
+                                    <span class="txt">01</span>
+                                    <span class="imgs"></span>
+                                </p>
+                                <p class="sbj">
+                                    Achievements <b>주요성과</b>
+                                </p>
+                            </div>
+                            <div class="cont">
+                                <div class="cyber_achive_slide">
+                                    <div class="sli_cyber swiper-container swiper-container-initialized swiper-container-horizontal">
+                                        <ul class="swiper-wrapper">
+                                            <li class="cy_sl swiper-slide swiper-slide-active" style="width: 412px;">
+                                                <p class="bold">01. 사이버침해대응본부</p>
+                                                <p class="txt">
+                                                    사이버 위협으로부터 국가와 국민의 안전을 지키겠습니다.
+                                                </p>
+                                                <a href="/801" class="more">자세히 보기</a>
+                                            </li>
+                                            <li class="cy_sl swiper-slide swiper-slide-next" style="width: 412px;">
+                                                <p class="bold">02. 개인정보보호본부</p>
+                                                <p class="txt">
+                                                    사회 전반의 개인정보보호 역량을 강화하고 안전한 데이터 활용 기반을 조성 하겠습니다.
+                                                </p>
+                                                <a href="/802" class="more">자세히 보기</a>
+                                            </li>
+                                            <li class="cy_sl swiper-slide" style="width: 412px;">
+                                                <p class="bold">03. 디지털보안산업본부</p>
+                                                <p class="txt">
+                                                    정보보호 산업 생태계 조성을 통해 경쟁력 있는 정보보호 기업을 육성하겠습니다.
+                                                </p>
+                                                <a href="/803" class="more">자세히 보기</a>
+                                            </li>
+                                            <li class="cy_sl swiper-slide" style="width: 412px;">
+                                                <p class="bold">04. 디지털기반본부</p>
+                                                <p class="txt">
+                                                    국민이 편리하게 이용할 수 있는 안정적인 디지털 세상을 만들겠습니다.
+                                                </p>
+                                                <a href="/804" class="more">자세히 보기</a>
+                                            </li>
+                                        </ul>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                    <div class="btns">
+                                        <button type="button" class="ach_btn prev swiper-button-disabled" title="이전" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true"><span class="blind">이전</span></button>
+                                        <button type="button" class="ach_btn play" title="재생"><span class="blind">재생</span></button>
+                                        <button type="button" class="ach_btn next" title="다음" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><span class="blind">다음</span></button>
+                                    </div>
+
+                                    <script>
+                                        // 주요성과 슬라이드
+                                        var cyberSwiper = new Swiper(".sli_cyber", {
+                                            loop: false,
+                                            speed: 1000,
+                                            autoplay: false,
+                                            navigation: {
+                                                nextEl: '.ach_btn.next',
+                                                prevEl: '.ach_btn.prev',
+                                            }
+                                        });
+
+                                        $('.ach_btn.play').on('click',function(){
+                                            if($(this).hasClass('on')){
+                                                var achBtnHtml = '<span class="blind">재생</span>';
+                                                $(this).removeClass('on');
+                                                $(this).attr('title','재생');
+                                                $(this).html(achBtnHtml);
+                                                cyberSwiper.autoplay.stop();
+                                            } else {
+                                                var achBtnHtml = '<span class="blind">멈춤</span>';
+                                                $(this).addClass('on');
+                                                $(this).attr('title','멈춤');
+                                                $(this).html(achBtnHtml);
+                                                cyberSwiper.autoplay.start();
+                                            }
+                                        })
+                                        /*
+                                        var target = '.sli_cyber';
+                                        function focusSlideTo(){
+                                            var targetEl = $(target);
+                                            targetEl.find('.swiper-slide').each(function(i,v){
+                                                var eqIndex = i;
+                                                $(this).on('focusin',function(){
+                                                    console.log(eqIndex);
+                                                    cyberSwiper.slideTo(eqIndex, 1000, false);
+                                                    //console.log('test' + eqIndex);
+                                                });
+                                            });
+                                        }
+                                        focusSlideTo();
+                                         */
+                                    </script>
+                                </div>
+
+
+                                <!--                                 <div class="platform_tab_wrap"> -->
+                                <!--                                     <div class="text"> -->
+                                <!--                                         <p> -->
+                                <!--                                             <b>KISA <br>지식플랫폼</b> -->
+                                <!--                                             <span>Knowledge platform</span> -->
+                                <!--                                         </p> -->
+
+                                <!--                                         <ul class="ma_platform_tab"> -->
+                                <!--                                             <li> -->
+                                <!--                                                 <a href="/20101" class="active">연구보고서</a> -->
+                                <!--                                                 <ul class="cover"> -->
+                                <!--                                                     <li> -->
+                                <!--                                                         <a href="#funcClicked" onclick="funcClicked();"> -->
+                                <!--                                                             <div class="over" onclick="location.href='/20101';"> -->
+                                <!--                                                                 <span class="icon pdf"><img src="images/ic_pdf_01.png" alt=""></span> -->
+                                <!--                                                                 <span class="more">더보기<i class="xi-long-arrow-right"></i></span> -->
+
+                                <!--                                                             </div> -->
+                                <!--                                                             <img src="images/img_knowledge_01.jpg" alt=""> -->
+                                <!--                                                         </a> -->
+                                <!--                                                     </li> -->
+                                <!--                                                     <li> -->
+                                <!--                                                         <a href="#funcClicked" onclick="funcClicked();"> -->
+                                <!--                                                             <div class="over" onclick="location.href='/2030201';"> -->
+                                <!--                                                                 <span class="icon pdf"><img src="images/ic_pdf_01.png" alt=""></span> -->
+                                <!--                                                                 <span class="more">더보기 <i class="xi-long-arrow-right"></i></span> -->
+                                <!--                                                             </div> -->
+                                <!--                                                             <img src="images/img_knowledge_01.jpg" alt=""> -->
+                                <!--                                                         </a> -->
+                                <!--                                                     </li> -->
+                                <!--                                                 </ul> -->
+                                <!--                                             </li> -->
+                                <!--                                             <li> -->
+                                <!--                                                 <a href="/2030201">기술안내서</a> -->
+                                <!--                                                 <ul class="cover" data-info="기술안내서"> -->
+                                <!--                                                     <li> -->
+                                <!--                                                         <a href="#funcClicked" onclick="funcClicked();"> -->
+                                <!--                                                             <div class="over"> -->
+                                <!--                                                                 <span class="icon pdf"><img src="images/ic_pdf_01.png" alt=""></span> -->
+                                <!--                                                                 <span class="more">더보기 <i class="xi-long-arrow-right"></i></span> -->
+                                <!--                                                             </div> -->
+                                <!--                                                             <img src="images/img_knowledge_01.jpg" alt=""> -->
+                                <!--                                                         </a> -->
+                                <!--                                                     </li> -->
+                                <!--                                                     <li> -->
+                                <!--                                                         <a href="#funcClicked" onclick="funcClicked();"> -->
+                                <!--                                                             <div class="over"> -->
+                                <!--                                                                 <span class="icon pdf"><img src="images/ic_pdf_01.png" alt=""></span> -->
+                                <!--                                                                 <span class="more">더보기 <i class="xi-long-arrow-right"></i></span> -->
+                                <!--                                                             </div> -->
+                                <!--                                                             <img src="images/img_knowledge_01.jpg" alt=""> -->
+                                <!--                                                         </a> -->
+                                <!--                                                     </li> -->
+                                <!--                                                 </ul> -->
+                                <!--                                             </li> -->
+                                <!--                                         </ul> -->
+                                <!--                                     </div> -->
+                                <!--                                 </div> -->
+                                <div class="platform_tab_wrap">
+                                    <div class="text">
+                                        <p>
+                                            <b>KISA <br>지식플랫폼</b>
+                                            <span>Knowledge platform</span>
+                                        </p>
+
+                                        <ul class="ma_platform_tab">
+                                            <li>
+                                                <a href="/201" class="active">연구보고서</a>
+                                                <div class="cover2">
+                                                    <img src="images/ic_ knowledge_1.png" alt="">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="/2060201">기술안내서</a>
+                                                <div class="cover2">
+                                                    <img src="images/ic_ knowledge_1.png" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script>
+                                    // 탭
+                                    $('.ma_platform_tab > li > a').on('click focusin', function(){
+                                        $('.ma_platform_tab > li > a').removeClass('active');
+                                        $(this).addClass('active')
+                                    })
+                                </script>
+                            </div>
+                        </article>
+
+                        <article class="n02" data-num="02">
+                            <div class="title">
+                                <p class="num">
+                                    <span class="txt">02</span>
+                                    <span class="imgs"></span>
+                                </p>
+                                <p class="sbj">
+                                    Report Hacking <b>해킹신고</b>
+                                </p>
+                            </div>
+                            <div class="cont">
+                                <div class="half">
+                                    <a href="/cyberhelper118" class="haking_banner" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="images/img_hacking_01.jpg" alt="사이버고충 해결 365일 24시간 운영! 대국민 사이버 도우미 118 이메일 신고 118@kisa.or.kr"></a>
+                                </div>
+                                <div class="half">
+                                    <a href="/302" class="haking_banner" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="images/img_hacking_02.jpg" alt="안전한 인터넷 세상 KISA 대국민서비스 바로가기"></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="n03 on" data-num="03">
+                            <div class="title">
+                                <p class="num">
+                                    <span class="txt">03</span>
+                                    <span class="imgs"></span>
+                                </p>
+                                <p class="sbj">
+                                    Main Service <b>주요서비스</b>
+                                </p>
+                            </div>
+                            <div class="cont">
+                                <div class="testbed_slide">
+                                    <button type="button" class="tsBed_btn prev" title="이전" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"><span class="blind">이전</span></button>
+                                    <div class="test_slide swiper-container swiper-container-initialized swiper-container-horizontal">
+                                        <ul class="swiper-wrapper" style="transform: translate3d(-935px, 0px, 0px); transition-duration: 0ms;">
+
+                                            <li class="first swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.boho.or.kr/webprotect/pcSecCheck.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_01.png" alt=""></span>
+                                                    <p>내PC돌보미</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.boho.or.kr/webprotect/samCompany.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_02.png" alt=""></span>
+                                                    <p>중소기업홈페이지 보안강화</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.boho.or.kr/webprotect/untactcon.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_03.png" alt=""></span>
+                                                    <p>다중이용 기업서비스 취약점 점검</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.boho.or.kr/webprotect/securityWeakness.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_04.png" alt=""></span>
+                                                    <p>중소기업 SW보안약점 진단</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.boho.or.kr/bigData/guide.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_05.png" alt=""></span>
+                                                    <p>사이버보안 빅데이터센터 이용</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-prev" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.ksecurity.or.kr/kisis/subIndex/469.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_06.png" alt=""></span>
+                                                    <p>정보보호전문 서비스기업</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-active" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://isms.kisa.or.kr/" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_07.png" alt=""></span>
+                                                    <p>정보보호 및 개인정보보호 관리체계인증</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide swiper-slide-next" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://isms.kisa.or.kr/main/csap/notice" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_08.png" alt=""></span>
+                                                    <p>클라우드 보안인증</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="/1040408" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_09.png" alt=""></span>
+                                                    <p>융합보안리빙랩</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.ksecurity.or.kr/kisis/subIndex/307.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_10.png" alt=""></span>
+                                                    <p>IoT보안인증</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://www.ksecurity.or.kr/kisis/subIndex/249.do" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_11.png" alt=""></span>
+                                                    <p>IoT보안 테스트베드</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://academy.kisa.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_12.png" alt=""></span>
+                                                    <p>KISA 사이버 보안교육</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://risc.kisa.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_13.png" alt=""></span>
+                                                    <p>지역정보보호센터 통합서비스</p>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide" style="width: 135.833px; margin-right: 20px;">
+                                                <a href="https://ecmc.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림">
+                                                    <span class="icon"><img src="images/ic_ma_test1_14.png" alt=""></span>
+                                                    <p>ICT 분쟁조정지원센터</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                    <button type="button" class="tsBed_btn next" title="다음" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><span class="blind">다음</span></button>
+                                </div>
+                                <script>
+                                    // 테스트베드 슬라이드
+                                    var testBedSwiper = new Swiper(".test_slide", {
+                                        slidesPerView: 6,
+                                        spaceBetween: 20,
+                                        loop: false,
+                                        speed: 1500,
+                                        slidesPerGroup: 6,
+                                        loopFillGroupWithBlank : false,
+                                        autoplay: {
+                                            delay: 3000,
+                                        },
+                                        navigation: {
+                                            nextEl: '.tsBed_btn.next',
+                                            prevEl: '.tsBed_btn.prev',
+                                        },
+                                        breakpoints : {
+                                            900 : {
+                                                slidesPerView: 6,
+                                                slidesPerGroup: 6,
+                                            },
+                                            700 : {
+                                                slidesPerView: 2,
+                                                slidesPerGroup: 2,
+                                            },
+                                            220 : {
+                                                slidesPerView: 2,
+                                                slidesPerGroup: 2,
+                                            }
+                                        }
+                                    });
+                                    $('.test_slide').on('focusin', function(){
+                                        testBedSwiper.autoplay.stop();
+                                    });
+                                    $('.test_slide').on('focusout', function(){
+                                        testBedSwiper.autoplay.start();
+                                    });
+                                    $('.test_slide .swiper-slide').each(function(i,v){
+                                        var swiperSlideIndex = i;
+                                        $(this).on('focusin', function(){
+                                            var testSlideWidth = $('.main_business .test_slide').width();
+                                            if(testSlideWidth >= 700){
+                                                var targetNum = parseInt((swiperSlideIndex + 3) / 6) + 1;
+                                                testBedSwiper.slideTo(targetNum, 1500, false);
+                                            }
+                                        })
+                                    });
+
+                                    $('.main_business article').on('mouseenter', function(){
+                                        mainBusiness($(this));
+                                    })
+
+                                    $('.main_business article a:first-of-type').on('focusin', function(){
+                                        mainBusinessFocus($(this));
+                                    })
+
+                                    function mainBusiness(id){
+                                        $('.main_business article').removeClass('on')
+                                        id.addClass('on');
+
+                                        var number = id.attr('data-num');
+                                        $('.main_business').attr('data-bg',number);
+                                    }
+
+                                    function mainBusinessFocus(id){
+                                        $('.main_business article').removeClass('on')
+                                        id.parents('article').addClass('on');
+
+                                        var number = id.parents('article').attr('data-num');
+                                        $('.main_business').attr('data-bg',number);
+                                    }
+                                </script>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div></section>
+
+            <section class="section fp-section fp-table" id="section2" data-anchor="3rdPage"><div class="fp-tableCell">
+                <div class="content main_notice">
+                    <div class="inner">
+                        <h2>News</h2>
+                        <h3>알림마당</h3>
+                        <div class="top_row">
+                            <div class="notice_box">
+                                <ul class="news_notice_tab">
+                                    <li>
+                                        <a href="#funcClicked" onclick="funcClicked();" class="sbj">전체보기</a>
+                                        <ul class="list">
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8315">
+                                                        
+                                                	<span class="cate black">
+                                                	
+                                                	
+                                                	
+                                                        입찰공고
+                                                    
+                                                	
+                                                	</span>
+                                                        
+                                                            KISA 발주 용역과제 업무프로세스 안내
+                                                    </a>
+                                                    <span>2022.02.25</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8541">
+                                                        
+                                                            [사전규격공개] 2022년 정보보호 인력 현황 조사
+                                                    </a>
+                                                    <span>2022.05.16</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8539">
+                                                        
+                                                            IoT 보안인증 활성화 정책 마련
+                                                    </a>
+                                                    <span>2022.05.13</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8538">
+                                                        
+                                                            IoT 보안인증 교육과정  개발 및 운영
+                                                    </a>
+                                                    <span>2022.05.13</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8537">
+                                                        
+                                                            2022년 아태지역 인터넷거버넌스 아카데미 (APIGA) 용역
+                                                    </a>
+                                                    <span>2022.05.13</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8536">
+                                                        
+                                                            [사전규격공개] 앱 마켓 실태조사 관련 조사방법론 도출
+                                                    </a>
+                                                    <span>2022.05.12</span>
+                                                </li>
+                                            
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#funcClicked" onclick="funcClicked();" class="sbj">공지사항</a>
+                                        <ul class="list">
+                                            
+                                                <li>
+                                                    <a href="/401/form?postSeq=2948">
+                                                        
+                                                            2022년 사업자 대상 위치정보 보호 교육 실시(제1차 이론과정)
+                                                    </a>
+                                                    <span>2022.05.12</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/401/form?postSeq=2947">
+                                                        
+                                                            CBPR 인증제도 설명회 (5/17(화) 14-16시, 온라인) 
+                                                    </a>
+                                                    <span>2022.05.11</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/401/form?postSeq=2946">
+                                                        
+                                                            2022년 위치정보 우수 비즈니스 모델 발굴 프로젝트 
+                                                    </a>
+                                                    <span>2022.05.10</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/401/form?postSeq=2945">
+                                                        
+                                                            정보보호제품 CC인증 컨설팅 신청·접수 안내
+                                                    </a>
+                                                    <span>2022.05.10</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/401/form?postSeq=2944">
+                                                        
+                                                            정보보호제품 성능평가·컨설팅 지원 신청·접수 안내
+                                                    </a>
+                                                    <span>2022.05.10</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/401/form?postSeq=2943">
+                                                        
+                                                            2022년 IoT 보안테스트베드 이용 및 교육 안내
+                                                    </a>
+                                                    <span>2022.05.09</span>
+                                                </li>
+                                            
+                                        </ul>
+                                        <a href="/401" class="btn_more" title="더보기"><span class="blind">공지사항 더보기</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#funcClicked" onclick="funcClicked();" class="sbj">보도자료</a>
+                                        <ul class="list">
+                                            
+                                                <li>
+                                                    <a href="/402/form?postSeq=2144">
+                                                        
+                                                            KISA, 중소기업 버그바운티 “화이트햇 투게더” 참가자 모집
+                                                    </a>
+                                                    <span>2022.05.11</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/402/form?postSeq=2143">
+                                                        
+                                                            KISA, 정보보호제품 성능 향상 및 보안성 강화를 위한 맞춤형 컨설팅 지원
+                                                    </a>
+                                                    <span>2022.05.10</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/402/form?postSeq=2142">
+                                                        
+                                                            KISA,&nbsp;지역 중소기업 정보보호 지원 사업 수요기업 모집한다!
+                                                    </a>
+                                                    <span>2022.05.02</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/402/form?postSeq=2141">
+                                                        
+                                                            KISA,&nbsp;랜섬웨어로부터 중요 데이터 지키세요!
+                                                    </a>
+                                                    <span>2022.04.26</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/402/form?postSeq=2139">
+                                                        
+                                                            MZ 감성으로 KISA를 ‘더 쉽고 참신하게’ 알려요!
+                                                    </a>
+                                                    <span>2022.04.25</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/402/form?postSeq=2140">
+                                                        
+                                                            KISA 경기정보보호지원센터, '경기정보보안협의회' 발족
+                                                    </a>
+                                                    <span>2022.04.25</span>
+                                                </li>
+                                            
+                                        </ul>
+                                        <a href="/402" class="btn_more" title="더보기"><span class="blind">보도자료 더보기</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#funcClicked" onclick="funcClicked();" class="sbj active">채용정보</a>
+                                        <ul class="list">
+                                            
+                                                <li>
+                                                    <a href="/404/form?postSeq=1335">
+                                                        
+                                                            [접수중] 2022년도 상반기 한국인터넷진흥원 직원 채용
+                                                    </a>
+                                                    <span>2022.05.10</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/404/form?postSeq=1334">
+                                                        
+                                                            [접수중] 2022년도 상반기 체험형 청년인턴(장애인 제한경쟁) 채용
+                                                    </a>
+                                                    <span>2022.05.10</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/404/form?postSeq=1333">
+                                                        
+                                                            2021년도 하반기 한국인터넷진흥원 전문계약직 재공고
+                                                    </a>
+                                                    <span>2022.01.17</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/404/form?postSeq=1332">
+                                                        
+                                                            2021년도 하반기 한국인터넷진흥원 전문계약직 공개채용
+                                                    </a>
+                                                    <span>2021.12.22</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/404/form?postSeq=1331">
+                                                        
+                                                            2021년도 하반기 육아휴직대체 인력 공개채용
+                                                    </a>
+                                                    <span>2021.07.21</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/404/form?postSeq=1330">
+                                                        
+                                                            2021년도 하반기 채용형 청년인턴 공개채용
+                                                    </a>
+                                                    <span>2021.07.21</span>
+                                                </li>
+                                            
+                                        </ul>
+                                        <a href="/404" class="btn_more" title="더보기"><span class="blind">채용정보 더보기</span></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#funcClicked" onclick="funcClicked();" class="sbj">입찰공고</a>
+                                        <ul class="list">
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8315">
+                                                        
+                                                            <span class="cate black">입찰공고</span>
+                                                        
+                                                            KISA 발주 용역과제 업무프로세스 안내
+                                                    </a>
+                                                    <span>2022.02.25</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8541">
+                                                        
+                                                            [사전규격공개] 2022년 정보보호 인력 현황 조사
+                                                    </a>
+                                                    <span>2022.05.16</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8539">
+                                                        
+                                                            IoT 보안인증 활성화 정책 마련
+                                                    </a>
+                                                    <span>2022.05.13</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8538">
+                                                        
+                                                            IoT 보안인증 교육과정  개발 및 운영
+                                                    </a>
+                                                    <span>2022.05.13</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8537">
+                                                        
+                                                            2022년 아태지역 인터넷거버넌스 아카데미 (APIGA) 용역
+                                                    </a>
+                                                    <span>2022.05.13</span>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="/403/form?postSeq=8536">
+                                                        
+                                                            [사전규격공개] 앱 마켓 실태조사 관련 조사방법론 도출
+                                                    </a>
+                                                    <span>2022.05.12</span>
+                                                </li>
+                                            
+                                        </ul>
+                                        <a href="/403" class="btn_more" title="더보기"><span class="blind">입찰공고 더보기</span></a>
+                                    </li>
+
+                                    <!--                                     <li> -->
+                                    <!--                                         <a href="#funcClicked" onclick="funcClicked();" class="sbj">보도자료</a> -->
+                                    <!--                                         <ul class="list"> -->
+                                    <!--                                             <li> -->
+                                    <!--                                                 <a href="#funcClicked" onclick="funcClicked();"><span class="cate black">보도자료</span> 2021년 민간 소프트웨어 개발보안 교육과정 안내22</a> -->
+                                    <!--                                                 <span>2021.08.23</span> -->
+                                    <!--                                             </li> -->
+                                    <!--                                             <li> -->
+                                    <!--                                                 <a href="#funcClicked" onclick="funcClicked();">2021 전자문서 유공 포상 공고</a> -->
+                                    <!--                                                 <span>2021.08.23</span> -->
+                                    <!--                                             </li> -->
+                                    <!--                                             <li> -->
+                                    <!--                                                 <a href="#funcClicked" onclick="funcClicked();">제2회 AI Security Day 세미나 개최 안내</a> -->
+                                    <!--                                                 <span>2021.08.23</span> -->
+                                    <!--                                             </li> -->
+                                    <!--                                             <li> -->
+                                    <!--                                                 <a href="#funcClicked" onclick="funcClicked();"><span class="cate red">수정공지</span> 2021년 소프트웨어 개발보안 교육 안내</a> -->
+                                    <!--                                                 <span>2021.08.23</span> -->
+                                    <!--                                             </li> -->
+                                    <!--                                             <li> -->
+                                    <!--                                                 <a href="#funcClicked" onclick="funcClicked();">제10회 '한국인터넷거버넌스포럼(KrIGF)' 개최 안내</a> -->
+                                    <!--                                                 <span>2021.08.23</span> -->
+                                    <!--                                             </li> -->
+                                    <!--                                             <li> -->
+                                    <!--                                                 <a href="#funcClicked" onclick="funcClicked();">메타버스 기반 핀테크 해커톤 개최 협력기업 모집 공고</a> -->
+                                    <!--                                                 <span>2021.08.23</span> -->
+                                    <!--                                             </li> -->
+                                    <!--                                         </ul> -->
+                                    <!--                                         <a href="#funcClicked" onclick="funcClicked();" class="btn_more" title="더보기"></a> -->
+                                    <!--                                     </li> -->
+                                </ul>
+                            </div>
+                            <script>
+                                //알림마당
+                                var num = $('.news_notice_tab > li').length;
+                                var intervalTimer;
+                                function focusOutFunc(e) {
+                                    //if (!intervalTimer) {
+                                    intervalTimer = setTimeout(startIntervalFunc, 1000);
+                                    //}
+                                }
+                                function focusInFunc(e) {
+                                    //if (timer) {
+                                    clearTimeout(intervalTimer);
+                                    intervalTimer = null;
+                                    clearInterval(intervalFunc);
+                                    //}
+                                }
+                                function intervalS(){
+                                    var num2 = $('.news_notice_tab > li > a.active').parent().index();
+                                    num3 = num2 + 1;
+                                    if(num3 === num) {num3 = 0};
+                                    $('.news_notice_tab > li').eq(num3).find('a.sbj').trigger('click');
+                                }
+                                var intervalFunc = setInterval(function(){intervalS()},5000);
+                                var startIntervalFunc = function() {
+                                    intervalFunc = setInterval(function(){intervalS()},5000);
+                                    intervalTimer = null;
+                                };
+                                $('.news_notice_tab').on('focusout',function(){focusOutFunc()});
+                                $('.news_notice_tab').on('focusin',function(){focusInFunc()});
+                                $('.news_notice_tab > li > a.sbj').on('click focusin',function(){
+                                    timer = null;
+                                    $('.news_notice_tab > li > a').removeClass('active');
+                                    $(this).addClass('active');
+                                });
+                            </script>
+
+
+                            <div class="photoNews_box">
+                                <h2>포토뉴스</h2>
+                                <div class="btns" style="padding-right:46px;">
+                                    <button type="button" class="phoNe_btn cir_b prev" title="이전" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"><span class="blind">이전</span></button>
+                                    <button type="button" class="phoNe_btn cir_b pause" title="멈춤"><span class="blind">멈춤</span></button>
+                                    <button type="button" class="phoNe_btn cir_b next" title="다음" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"><span class="blind">다음</span></button>
+                                </div>
+                                <div class="slide_b swiper-container swiperPhotoNews swiper-container-initialized swiper-container-horizontal">
+                                    <ul class="swiper-wrapper" style="transform: translate3d(-891px, 0px, 0px); transition-duration: 0ms;">
+
+                                        
+                                            <li class="swiper-slide" style="width: 297px;">
+                                                <a href="/405/form?postSeq=672">
+                                                        
+                                                    
+                                                        
+                                                        <div class="imgs"><img style="width:295px; height:200px;" src="/post/getThumbImage.do?menuSeq=405&amp;postSeq=672&amp;lang_type=KO" alt="220512-KISA-보도사진(서울과학종합대학원대학교-KISA, 사이버 보안 인재 양성을 위한 MoU 체결)(1)"></div>
+                                                    
+                                                    <p class="tit">사이버 보안 인재 양성을 위한 MOU 체결식</p>
+                                                        
+                                                        
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide" style="width: 297px;">
+                                                <a href="/405/form?postSeq=671">
+                                                        
+                                                    
+                                                        
+                                                        <div class="imgs"><img style="width:295px; height:200px;" src="/post/getThumbImage.do?menuSeq=405&amp;postSeq=671&amp;lang_type=KO" alt="220425-KISA-보도사진(MZ_감성으로_KISA를_‘더_쉽고_참신하게’_알려요_)"></div>
+                                                    
+                                                    <p class="tit">제2기 KISA 대학생 영상 서포터즈 발대식</p>
+                                                        
+                                                        
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide swiper-slide-prev" style="width: 297px;">
+                                                <a href="/405/form?postSeq=667">
+                                                        
+                                                    
+                                                        
+                                                        <div class="imgs"><img style="width:295px; height:200px;" src="/post/getThumbImage.do?menuSeq=405&amp;postSeq=667&amp;lang_type=KO" alt="220419-KISA-포토뉴스(KISA__지역발전_위해_‘지역_상생협력_위원회’_개최)_(2)"></div>
+                                                    
+                                                    <p class="tit">‘지역 상생협력 위원회’ 개최</p>
+                                                        
+                                                        
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide swiper-slide-active" style="width: 297px;">
+                                                <a href="/405/form?postSeq=670">
+                                                        
+                                                    
+                                                        
+                                                        <div class="imgs"><img style="width:295px; height:200px;" src="/post/getThumbImage.do?menuSeq=405&amp;postSeq=670&amp;lang_type=KO" alt="220408-KISA-보도사진(KISA-서울지방변호사회__온라인광고_피해예방_및_피해구제_지원_강화를_위한_업무협약(MoU)_체결)(1)"></div>
+                                                    
+                                                    <p class="tit">KISA-서울지방변호사회, 온라인광고 피해예방 및 피해구제 지원 강화를 위한 업무협약(MoU) </p>
+                                                        
+                                                        
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide swiper-slide-next" style="width: 297px;">
+                                                <a href="/405/form?postSeq=669">
+                                                        
+                                                    
+                                                        
+                                                        <div class="imgs"><img style="width:295px; height:200px;" src="/post/getThumbImage.do?menuSeq=405&amp;postSeq=669&amp;lang_type=KO" alt="220405-KISA-보도사진(KISA__식목일_맞아_탄소중립을_위한_그린힐링(Green-Healing)_행사로_ESG경영_적극_실천)_(1)"></div>
+                                                    
+                                                    <p class="tit">그린힐링(Green Healing) 식목행사</p>
+                                                        
+                                                        
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="swiper-slide" style="width: 297px;">
+                                                <a href="/405/form?postSeq=668">
+                                                        
+                                                    
+                                                        
+                                                        <div class="imgs"><img style="width:295px; height:200px;" src="/post/getThumbImage.do?menuSeq=405&amp;postSeq=668&amp;lang_type=KO" alt="220223-KISA-보도사진(KISA_‘노사공동_ESG_경영_선포식’_개최) (1).jpeg"></div>
+                                                    
+                                                    <p class="tit">노사공동 'ESG 경영 선포식’ 개최</p>
+                                                        
+                                                        
+                                                </a>
+                                            </li>
+                                        
+                                        <!--                                         <li class="swiper-slide"> -->
+                                        <!--                                             <a href="#funcClicked" onclick="funcClicked();"> -->
+                                        <!--                                                 <div class="imgs"><img src="images/img_ma03_photo_1.jpg" alt=""></div> -->
+                                        <!--                                                 <p class="tit">KISA-이화여대, MOU 체결</p> -->
+                                        <!--                                                 <p class="txt">4일(금) 한국인터넷진흥원과 이화여자대와 협력하기 위해</p> -->
+                                        <!--                                                 <p class="date">2021-06-04</p> -->
+                                        <!--                                             </a> -->
+                                        <!--                                         </li> -->
+                                        <!--                                         <li class="swiper-slide"> -->
+                                        <!--                                             <a href="#funcClicked" onclick="funcClicked();"> -->
+                                        <!--                                                 <div class="imgs"><img src="images/img_ma03_photo_2.jpg" alt=""></div> -->
+                                        <!--                                                 <p class="tit">KISA-이화여대, MOU 체결</p> -->
+                                        <!--                                                 <p class="txt">4일(금) 한국인터넷진흥원과 이화여자대와 협력하기 위해</p> -->
+                                        <!--                                                 <p class="date">2021-06-04</p> -->
+                                        <!--                                             </a> -->
+                                        <!--                                         </li> -->
+                                    </ul>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                <div class="btns" style="padding-right:46px;">
+                                    <a href="/405" class="btn_more" title="더보기"><span class="blind">포토뉴스 더보기</span></a>
+                                </div>
+                                <script>
+                                    // 포토뉴스 슬라이드
+                                    var photoSwiper = new Swiper(".swiperPhotoNews", {
+                                        slidesPerView: 2,
+                                        loop: false,
+                                        loopFillGroupWithBlank: true,
+                                        speed: 1000,
+                                        autoplay: {
+                                            delay: 6000,
+                                        },
+                                        navigation: {
+                                            nextEl: '.phoNe_btn.next',
+                                            prevEl: '.phoNe_btn.prev',
+                                        }
+                                    });
+
+                                    $('.phoNe_btn.pause').on('click',function(){
+                                        if($(this).hasClass('on')){
+                                            var phoNeBtnHtml = '<span class="blind">멈춤</span>';
+                                            $(this).removeClass('on');
+                                            $(this).attr('title','멈춤');
+                                            $(this).html(phoNeBtnHtml);
+                                            photoSwiper.autoplay.start();
+                                        } else {
+                                            var phoNeBtnHtml = '<span class="blind">재생</span>';
+                                            $(this).addClass('on');
+                                            $(this).attr('title','재생');
+                                            $(this).html(phoNeBtnHtml);
+                                            photoSwiper.autoplay.stop();
+                                        }
+                                    })
+                                    $('.swiperPhotoNews').on('focusin', function(){
+                                        photoSwiper.autoplay.stop();
+                                    });
+                                    $('.swiperPhotoNews').on('focusout', function(){
+                                        photoSwiper.autoplay.start();
+                                    });
+                                    var targetPhoto = '.swiperPhotoNews';
+                                    function focusPhotoSlideTo(){
+                                        var targetEl = $(targetPhoto);
+                                        targetEl.find('.swiper-slide').each(function(i,v){
+                                            if( i != 0){
+                                                var eqIndex = i - 1;
+                                                $(this).on('focusin',function(){
+                                                    var targetNum = parseInt(eqIndex / 2) + 1;
+                                                    photoSwiper.slideTo(targetNum, 1000, false);
+                                                });
+                                            }
+                                        });
+                                    }
+                                    focusPhotoSlideTo();
+                                </script>
+                            </div>
+                        </div>
+
+                        <div class="bottom_row">
+                            <div class="bottom_box box1">
+                                <h2>사회 공헌</h2>
+                                <div class="cont">
+                                    <a href="/40701"><img src="images/img_ma03_society_01.jpg" alt="KISA 사회공헌 활동 나눌수록 커지는 사랑의 크기 인터넷 사회공헌활동을 지속적이고 체계적으로 추진해 나가겠습니다."></a>
+                                </div>
+                            </div>
+
+                            <div class="bottom_box box2">
+                                <h2>SNS</h2>
+                                <div class="cont">
+                                    <ul>
+                                        <li class="youtube"><a href="https://www.youtube.com/user/KISA118" target="_blank" rel="noopener noreferrer" title="새창열림"><span class="blind">유튜브</span><img src="/resource/kor/images/common/ic_sns_youtube.png" alt="유튜브 아이콘"></a></li>
+                                        <li class="kakao"><a href="https://pf.kakao.com/_wKipC" target="_blank" rel="noopener noreferrer" title="새창열림"><span class="blind">카카오톡</span><img src="/resource/kor/images/common/ic_sns_kakao.png" alt="카카오톡 아이콘"></a></li>
+                                        <li class="blog"><a href="https://post.naver.com/kisa118" target="_blank" rel="noopener noreferrer" title="새창열림"><span class="blind">네이버블로그</span><img src="/resource/kor/images/common/ic_sns_blog.png" alt="네이버블로그 아이콘"></a></li>
+                                        <li class="facebook"><a href="https://www.facebook.com/kisa118" target="_blank" rel="noopener noreferrer" title="새창열림"><span class="blind">페이스북</span><img src="/resource/kor/images/common/ic_sns_facebook.png" alt="페이스북 아이콘"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bottom_box box3">
+                                <h2>알림판</h2>
+                                <div class="btns" style="padding-right:46px;">
+                                    <button type="button" class="maBa_btn cir_b prev" title="이전" tabindex="0" role="button" aria-label="Previous slide"><span class="blind">이전</span></button>
+                                    <button type="button" class="maBa_btn cir_b pause" title="멈춤"><span class="blind">멈춤</span></button>
+                                    <button type="button" class="maBa_btn cir_b next" title="다음" tabindex="0" role="button" aria-label="Next slide"><span class="blind">다음</span></button>
+                                </div>
+                                <div class="cont">
+                                    <div class="main_notice_banner swiper-container swiper-container-initialized swiper-container-horizontal">
+                                        <ul class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1108px, 0px, 0px);"><li class="ba_sl swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 554px;"><a href="https://www.kisa.or.kr/401/form?postSeq=2944&amp;page=1" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/post/getThumbImage.do?menuSeq=409&amp;postSeq=682&amp;lang_type=KO" alt="2022_05_한국인터넷진흥원_웹배너_554x224_성능평가_1"></a></li>
+                                            
+                                            
+                                                
+                                                    <li class="ba_sl swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 554px;"><a href="https://www.clean.go.kr/menu.es?mid=a10602030000" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/post/getThumbImage.do?menuSeq=409&amp;postSeq=684&amp;lang_type=KO" alt="noname01."></a></li>
+                                                
+                                                    <li class="ba_sl swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 554px;"><a href="https://www.kisa.or.kr/401/form?postSeq=2945&amp;page=1" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/post/getThumbImage.do?menuSeq=409&amp;postSeq=683&amp;lang_type=KO" alt="2022_05_한국인터넷진흥원_웹배너_554x224_CC평가_1"></a></li>
+                                                
+                                                    <li class="ba_sl swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 554px;"><a href="https://www.kisa.or.kr/401/form?postSeq=2944&amp;page=1" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/post/getThumbImage.do?menuSeq=409&amp;postSeq=682&amp;lang_type=KO" alt="2022_05_한국인터넷진흥원_웹배너_554x224_성능평가_1"></a></li>
+                                                
+                                            
+                                        <li class="ba_sl swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 554px;"><a href="https://www.clean.go.kr/menu.es?mid=a10602030000" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/post/getThumbImage.do?menuSeq=409&amp;postSeq=684&amp;lang_type=KO" alt="noname01."></a></li></ul>
+                                        <div class="dots swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                </div>
+                                <div class="btns" style="padding-right:46px;">
+                                    <a href="/40901" class="btn_more" title="더보기"><span class="blind">알림판 더보기</span></a>
+                                </div>
+                                <script>
+                                if(true){
+                                    // 알림판 슬라이드
+                                    var bannerSwiper = new Swiper(".main_notice_banner", {
+                                        loop: true,
+                                        speed: 1000,
+                                        autoplay: {
+                                            delay: 6000,
+                                        },
+                                        pagination: {
+                                            el: '.main_notice_banner .dots',
+                                            clickable: 'true',
+                                            type: 'bullets',
+                                        },
+                                        navigation: {
+                                            nextEl: '.maBa_btn.next',
+                                            prevEl: '.maBa_btn.prev',
+                                        }
+                                    });
+                                    $('.maBa_btn.pause').on('click',function(){
+                                        if($(this).hasClass('on')){
+                                            var maBaBtnHtml = '<span class="blind">멈춤</span>';
+                                            $(this).removeClass('on');
+                                            $(this).attr('title','멈춤');
+                                            $(this).html(maBaBtnHtml);
+                                            bannerSwiper.autoplay.start();
+                                        } else {
+                                            var maBaBtnHtml = '<span class="blind">재생</span>';
+                                            $(this).addClass('on');
+                                            $(this).attr('title','재생');
+                                            $(this).html(maBaBtnHtml);
+                                            bannerSwiper.autoplay.stop();
+                                        }
+                                    });
+                                    $('.main_notice_banner').on('focusin', function(){
+                                        bannerSwiper.autoplay.stop();
+                                    });
+                                    $('.main_notice_banner').on('focusout', function(){
+                                        bannerSwiper.autoplay.start();
+                                    });
+                                    /*
+                                    var targetBanner = '.main_notice_banner';
+                                    function focusBannerSlideTo(){
+                                        var targetEl = $(targetBanner);
+                                        targetEl.find('.swiper-slide').each(function(i,v){
+                                            var eqIndex = i;
+                                            $(this).on('focusin',function(){
+                                                bannerSwiper.slideTo(eqIndex, 1000, false);
+                                            });
+                                        });
+                                    }
+                                    focusBannerSlideTo();
+                                     */
+                                }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </section>
+
+
+            
+
+<!--Footer-->
+<section class="section" >
+<footer id="footer">
+    <div class="top">
+        <div class="inner">
+            <ul class="ft_menu">
+                <li class="white"><a id="footerTarget" href="/704">개인정보 처리방침</a></li>
+                <li><a href="/702">RSS</a></li>
+                <li><a href="/703">웹접근성 도움말</a></li>
+                <li class="green"><a href="/303">해킹·스팸개인정보침해 신고는 118</a></li>
+            </ul>
+
+            <dl class="ft_data">
+                <dt>KISA소개 자료</dt>
+                <dd><a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(99999999, 1, 1, 'KO');" title="소개자료 다운로드 국문">KR</a></dd>
+                <dd><a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(99999999, 1, 2, 'KO');" title="소개자료 다운로드 영문">ENG</a></dd>
+            </dl>
+        
+            <dl class="ft_sns">
+                <dt>SNS</dt>
+                <dd><a href="https://pf.kakao.com/_wKipC" target="_blank" title="새창열림"><span class="blind">카카오톡</span><i class="xi-kakaotalk"></i></a></dd>
+                <dd><a href="https://www.youtube.com/user/KISA118" target="_blank" title="새창열림"><span class="blind">유튜브</span><i class="xi-youtube-play"></i></a></dd>
+                <dd><a href="https://post.naver.com/kisa118" target="_blank" title="새창열림"><span class="blind">네이버 블로그</span><img src="/resource/kor/images/common/ic_ft_blog.png" alt="네이버 블로그"></a></dd>
+                <dd><a href="https://www.facebook.com/kisa118" target="_blank" title="새창열림"><span class="blind">페이스북</span><i class="xi-facebook"></i></a></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="bott">
+        <div class="inner">
+            <address>
+                <span class="left">[나주본원] (58324) 전라남도 나주시 진흥길 9 한국인터넷진흥원</span>
+                <span class="right">대표번호 : <a href="tel:143325" title="전화걸기">1433-25</a>(수신자 요금 부담) </span>
+                <span class="left">[서울청사] (05717) 서울시 송파구 중대로 135 (가락동) IT벤처타워</span>
+                <span class="right">[해킹ㆍ스팸개인정보침해 신고 <a href="tel:118" title="전화걸기">118]</a></span>
+                <span class="copyright">Copyright(C) 2021 KISA. All rights reserved.</span>
+            </address>
+
+            <div class="gover_logo">
+                <div class="sitelinkArea">
+                    <ul>
+                        <li>
+                            <label for="moveSel" class="blind">정부·유관기관</label>
+                            <select name="moveSel" id="moveSel" class="search_select2" title="정부·유관기관">
+                                <option value="">정부·유관기관</option>
+                                <option value="">-- 정부기관 --</option>
+                                <option value="https://www.msit.go.kr">과학기술정보통신부</option>
+                                <option value="https://www.mois.go.kr">행정안전부</option>
+                                <option value="https://www.kcc.go.kr">방송통신위원회</option>
+                                <option value="https://www.pipc.go.kr">개인정보보호위원회</option>
+                                <option value="">-----------------</option>
+                                <option value="">-- 유관기관 --</option>
+                                <option value="https://www.nipa.kr">정보통신산업진흥원</option>
+                                <option value="https://www.kisdi.re.kr">정보통신정책연구원</option>
+                                <option value="https://www.kca.kr">한국방송통신전파진흥원</option>
+                                <option value="https://www.nia.or.kr">한국지능정보사회진흥원</option>
+                                <option value="https://www.kdata.or.kr">한국데이터산업진흥원</option>
+                                <option value="https://www.kisia.or.kr">한국정보보호산업협회</option>
+                            </select>
+                            <button type="button" title="새창" class="btn_inline" onclick="moveSite('moveSel');return false;">이동</button>
+                        </li>
+                        <script>
+                        function moveSite(selId) {
+                            if(selId == null || selId == '' || $.trim($('#'+selId).val()) == '') {
+                                alert('항목을 선택하세요.');
+                                $('#'+selId).focus();
+                                return ;
+                            } else {
+                                window.open($('#'+selId).val(), "_blank");
+                            }
+                        }
+                        </script>
+                    </ul>
+                </div>
+                <div>
+                    <span><a href="https://www.innogov.go.kr/" target="_blank" title="새창열림"><span class="blind">내일을 위한 보다 나은 정부</span><img src="/resource/kor/images/common/img_ft_goverment.jpg" alt="내일을 위한 보다 나은 정부"></a></span>
+                    <span><a href="/webaccess" onclick="window.open(this.href,'wa','left=100px, top=100px, width=533,height=750,scrollbars=no');return false;"><span class="blind">웹접근성 인증 마크</span><img src="/resource/kor/images/common/wa_web.svg" alt="웹접근성 인증 마크" style="height:62px;"></a></span>
+                </div>
+            </div>
+        </div>
+  
+</footer>
+<style>
+    .sub_company_result_wrapper .re_cont_w .inner .info_b .re_info_b h3 .green {color: #4e9314;}
+</style>
+<script>
+//* 모바일에서 메뉴가리기 시작
+var hideInMobileMenuName = ['사전정보공표'];//모바일에서 가려야하는 메뉴는 여기에 메뉴명 추가
+function hideInMobileMenu(){
+	$('#mo_gnb > ul > li').each(function(){
+		var thisEl = $(this);
+		if(thisEl.find('> button').length >= 1){
+			var checkName = thisEl.find('> button').text();
+		}else{
+			var checkName = thisEl.find('> a').text();
+		}
+		var checkLength = hideInMobileMenuName.length;
+		if(hideInMobileMenuName.includes(checkName)){
+			thisEl.addClass('hideMenu');
+		}
+	});
+}
+$( document ).ready(function() {
+	hideInMobileMenu();
+});
+//* 모바일에서 메뉴가리기 끝 */
+</script>
+<!-- <script>
+    //* 웹접근성 용도 (subtabmenu replace position) 시작
+    $(window).on('load',function(){ 
+        var moChecker = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ? true : false;
+        var roundToTwo = function(num) { //반올림 아래두자리까지 
+            return +(Math.round(num + "e+2")  + "e-2"); 
+        },
+        tabLiHeightChecker = function(){ //li영역의 높이값 체크
+            if($('.sub_tab_menu_wrap').length <= 0) return false;
+            var lbCon = $('.sub_container > .inner .lb_con'),
+            subTabWrap = $('.sub_tab_menu_wrap'),
+            posTop = subTabWrap.offset().top - lbCon.offset().top,
+            newLiLength = $('.sub_tab_menu_li').length;
+            if(newLiLength >= 7 && newLiLength != 9){ //탭버튼의 갯수에 따른 sub_tab_menu_wrap 영역의 높이값 변경
+				var ceilNum = Math.ceil(Number(newLiLength/4));
+                subTabWrap.css('min-height', (ceilNum * 55) + 'px');
+            }else if(newLiLength == 9){ //탭버튼의 갯수에 따른 sub_tab_menu_wrap 영역의 높이값 변경
+                subTabWrap.css('min-height', '165px');
+            }else if(newLiLength >= 6 ){
+                subTabWrap.css('min-height', '110px');
+            }
+            for (var i = 0; i < newLiLength; i++) {
+                if(newLiLength >= 7 && newLiLength != 9){ //탭버튼의 갯수에 따른 sub_tab_menu_wrap 영역의 높이값 변경
+					var floorNum = Math.floor(Number(i/4));
+					var forBorder;
+					if(i % 4 == 0){
+						forBorder = true;
+					}else{
+						forBorder = false;
+					}
+					$('.sub_tab_index_' + i).css('top', Number(posTop + (floorNum * 55)) + 'px');
+					if(forBorder) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+				}else{
+					if( newLiLength >= 6 ){	
+						if(newLiLength == 6 && i >= 3){ 
+							$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+							if(i == 3) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+						}else if(newLiLength == 7 && i >= 4){ 
+							$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+							if(i == 4) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+						}else if(newLiLength == 8 && i >= 4){ 
+							$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+							if(i == 4) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+						}else if(newLiLength == 9){
+							if(i >= 6){
+								$('.sub_tab_index_' + i).css('top', Number(posTop + 110) + 'px');
+								if(i == 6) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+							}else if(i >= 3){
+								$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+								if(i == 3) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+							}
+						}else{
+							$('.sub_tab_index_' + i).css('top', posTop + 'px');
+						}						
+					}else{
+						$('.sub_tab_index_' + i).css('top', posTop + 'px');
+					}	
+				}		
+            }
+        },
+        tabLiLeftChecker = function(widthVals, liLengths , nths){ //li영역 left 값 설정
+            var liWidthPer = widthVals,
+            liLength = liLengths,
+            i = nths,
+            tabLiLeftVal = liWidthPer * i;
+			//var ceilNum = Math.ceil(Number(liLength/4));
+            if( liLength >= 6 ){	
+                if(liLength == 6 && i >= 3){ 
+                    tabLiLeftVal = liWidthPer * (i - 3);
+                }else if(liLength == 7 && i >= 4){ 
+                    tabLiLeftVal = liWidthPer * (i - 4);
+                }else if(liLength == 8 && i >= 4){ 
+                    tabLiLeftVal = liWidthPer * (i - 4);
+                }else if(liLength == 9){
+                    if(i >= 6){
+                        tabLiLeftVal = liWidthPer * (i - 6); 
+                    }else if(i >= 3){
+                        tabLiLeftVal = liWidthPer * (i - 3);
+                    }
+                }else if(liLength >= 10){
+					
+				}						
+            }
+			if( tabLiLeftVal >= 100 ) tabLiLeftVal = tabLiLeftVal % 100;
+            return tabLiLeftVal;
+        },
+        tabLiWidthChecker = function(liLengths){ //li영역 width 값 설정
+            var liLength = liLengths,
+            tabLiWidthVal = roundToTwo(100/liLength);
+			if(liLength >= 7 && liLength != 9){
+				tabLiWidthVal = 25; 
+			}else{
+				if(liLength == 6){
+					tabLiWidthVal = 33.33; 
+				}else if(liLength == 7){
+					tabLiWidthVal = 25; 
+				}else if(liLength == 8){
+					tabLiWidthVal = 25; 
+				}else if(liLength == 9){
+					tabLiWidthVal = 33.33; 
+				} 
+			}
+            return tabLiWidthVal;
+        },
+        makeTabLiHtml = function(tabIndex,tabWidth,tabLeft,activeClass){ //li영역 html 생성
+            var i = tabIndex,
+            liWidthPer = tabWidth,
+            liPosLeft = tabLeft,
+            tabLiHtml = '';
+            if(activeClass){
+                tabLiHtml += '<li class="sub_tab_menu_li sub_tab_index_' + i + ' active" style="width:' + liWidthPer + '%;left:' + liPosLeft + '%;">';
+                tabLiHtml += $('.sub_tab_menu li').eq(i).html();
+                tabLiHtml += '</li>';
+            }else{
+                tabLiHtml += '<li class="sub_tab_menu_li sub_tab_index_' + i + '" style="width:' + liWidthPer + '%;left:' + liPosLeft + '%;">';
+                tabLiHtml += $('.sub_tab_menu li').eq(i).html();
+                tabLiHtml += '</li>';
+            }
+            return tabLiHtml;
+        },
+        hideOriTabArea = function(tabIndex){ //기존 li 선택막기
+            var i = tabIndex;
+            $('.sub_tab_menu li').eq(i).find('a').attr('tabindex','-1');
+        },
+        tabReplacePos = function(){
+            try {
+                if($('.sub_tab_menu').length <= 0) return false;
+                var defaultIndex = 1,
+                tabIndex = 1,
+                ulEl = $('.sub_tab_menu'),
+                liLength = $('.sub_tab_menu li').length,
+                oneLength = $('.one').length;
+                if(liLength >= 1){ //탭버튼이 있을때
+                    if(liLength == oneLength){ //탭버튼만큼 탭영역이 있을 때
+                        var liWidthPer = tabLiWidthChecker(liLength);
+                        for (var i = 0; i < liLength; i++) {
+                            var liPosLeft = tabLiLeftChecker(liWidthPer,liLength,i),
+                            liHtml = '';
+                            if($('.sub_tab_menu li').eq(i).hasClass('active')){
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,true);
+                            }else{
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,false);
+                            } 
+                            $('.one').eq(i).before(liHtml);
+                            hideOriTabArea(i);
+                        }				
+                        $('.sub_tab_menu_li').each(function(i,v){ //탭버튼 클릭시 기존 기능과 같게 효과내기
+                            if(i == 0) $(this).find('a').attr('title','선택됨');
+                            $(this).find('a').on('click',function(){
+                                $('.sub_tab_menu li').eq(i).find('a').click();
+                                $('.sub_tab_menu_li').removeClass('active');
+                                $('.sub_tab_menu_li a').attr('title','');
+                                $(this).closest('.sub_tab_menu_li').addClass('active');
+                                $(this).attr('title','선택됨');
+                            });
+                        });
+                    }else{ //탭버튼만큼 탭영역이 없을 때
+                        var liWidthPer = tabLiWidthChecker(liLength);
+                        var activeChecker = true;
+                        for (var i = 0; i < liLength; i++) {
+                            var activeTrigger = false;
+                            var liPosLeft = tabLiLeftChecker(liWidthPer,liLength,i),
+                            liHtml = '';
+                            if($('.sub_tab_menu li').eq(i).hasClass('active')){
+                                activeTrigger = true;
+                                activeChecker = false;
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,activeTrigger);
+                            }else{
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,activeTrigger);
+                            } 
+                            if(activeChecker || activeTrigger){
+                                $('.sub_tab_menu_wrap').before(liHtml);
+                            }else{
+                                $('.user_satisfaction_survey').before(liHtml);
+                            }
+                            hideOriTabArea(i);
+                        }				
+                    }		
+                    ulEl.addClass('blind'); //기존 li 영역 가리기
+                    tabLiHeightChecker();
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        setTimeout(function(){ //페이지 로딩 후 0.2초 딜레이 주기
+            if(!moChecker) tabReplacePos(); //pc에서만 기능 가동
+        },200)
+        window.addEventListener('resize', function(){ //pc에서 리사이징 시에 기능 가동
+            if(!moChecker) tabLiHeightChecker(); 
+        });
+    });
+    // 웹접근성 용도 (subtabmenu replace position) 끝 */
+</script> -->
+<!-- <script>
+    // /* 링크없는 a 태그 가리기, title, target 넣기 시작
+    $(function(){
+        var moChecker = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ? true : false;
+        if(!moChecker){ //pc에서만 기능 가동
+            $('a').each(function(){
+                var targetAEl = $(this);
+                var aHref = targetAEl.attr('href');
+                var locationHost = window.location.host;
+                if(aHref == undefined){ //href 없을 때
+                    targetAEl.hide();
+                }else{	
+                    if(aHref == '' || aHref == '#' || aHref == '#none' || aHref == 'javascript:;') targetAEl.hide(); //href 값이 웹접근성에 어긋날 때
+                    if(aHref.indexOf('javascript') != -1) targetAEl.hide(); //href에 script 넣었을 때
+                    if(aHref.indexOf('http') != -1 ){ //외부링크로 넘어갈 때
+                        var aTarget = targetAEl.attr('target');
+                        var aTitle = targetAEl.attr('title');
+                        if(aTarget == undefined || aTarget != '_blank'){ //target="_blank"가 아닐 때
+                            if(aHref.indexOf(locationHost) == -1) targetAEl.attr('target','_blank');
+                        }
+                        if(aTitle == undefined || aTitle.indexOf('새') == -1 || aTitle.indexOf('창') == -1){ //title에 새 창이 없을 때
+                            if(aHref.indexOf(locationHost) == -1) targetAEl.attr('title','새창열림');
+                        } 
+                    }
+                    if(targetAEl.text() == ''){ //적절한 텍스트가 없을 때
+                        if(targetAEl.find('> img').length >= 1){
+                            if(targetAEl.find('> img').attr('alt') == 'undefined' || targetAEl.find('> img').attr('alt') == '') { //적절한 대체 텍스트가 없을 때
+                                targetAEl.hide();
+                            }
+                        }else{
+                            targetAEl.hide();
+                        }
+                    } 
+                }
+            });
+        }
+    });
+    // 링크없는 a 태그 가리기, title, target 넣기 끝 */
+</script> -->
+</footer>
+</section>
+<!--//Footer-->
+
+        </div>
+
+    </div>
+    <!--//Container-->
+
+</div>
+
+
+</body></html>

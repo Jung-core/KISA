@@ -1,0 +1,25 @@
+.slide_b {position: relative;width: 100%;height: 100%;overflow: hidden;}
+.slide_b ul li .text {position: absolute;top: 20%;left: 50%;	margin-left: -680px;z-index: 10;}
+.slide_b nav {position: absolute;top: calc(20% + 260px);left: 50%;margin-left: -680px;z-index: 10;}
+.slide_b .imgs{position:relative;width:100%;height:100%;}
+.slide_b ul li .imgs img{position: absolute; left: 0; top: 0; min-width: 102%; min-height: 102%; width: auto; height: auto; object-fit: cover;transform: scale(1.01);}
+/* .slide_b ul li.imgs img{position:absolute;top:0px;left:0px;width:100%;object-fit: cover;height:100vh;} */
+.slide_b nav .btns {display: inline-block;vertical-align: middle;width: 10px;height: 14px;background-repeat: no-repeat;background-position: center center;margin-top: 4px;margin-right: 7px;}
+.slide_b nav .btns.prev {background-image: url(../images/ic_sl_prev_w.png);}
+.slide_b nav .btns.pause {background-image: url(../images/ic_sl_pause_w.png);}
+.slide_b nav .btns.next {background-image: url(../images/ic_sl_next_w.png);}
+.slide_b nav .dot {display: inline-block;vertical-align: bottom;width: auto;}
+.slide_b nav .paging {display: inline-block;vertical-align: top;margin: 0 10px;color: #fff;font-size: 17px;}
+.slide_b nav .paging .cuN{font-size: 19px;}
+.slide_b nav .dot .swiper-pagination-bullet {width: 14px;height: 14px;opacity: 1;transition: all .5s ease-in-out;background-color: #fff;margin-right: 10px;}
+.slide_b nav .dot .swiper-pagination-bullet:last-of-type{margin-right: 0;}
+.slide_b nav .dot .swiper-pagination-bullet-active{width: 40px; border-radius: 20px; background-image: linear-gradient( to right, #223E91, #031B62);}
+.slide_b nav .btns.pause.on {background-image: url(../images/ic_sl_play_w.png);}
+.slide_b ul li .text h2 {margin-bottom: 20px;letter-spacing: 0;font-size: 20px;font-weight: 600;color: rgba(255,255,255, 1);}
+.slide_b ul li .text h3 {letter-spacing: -0.05em;line-height: 1.3;text-shadow: 0 0 5px rgb(0 0 0 / 30%);font-size: 50px;font-weight: 400;color: #fff;}
+.slide_b ul li .text h3 span {text-align: center;letter-spacing: -0.03em;font-weight: 600;color: #00B1FF;}
+.slide_b ul li .text h3 b {color: #82F300;}
+.typing {display: inline-block;animation-name: cursor;animation-duration: 0.3s;animation-iteration-count: infinite;line-height: 1;padding: 0 5px 0 0;margin: 0 5px 0 0;/* height: 35px; *//* width: 1px; */}
+.slide_b .swiper-slide{overflow: hidden;}
+.slide_b .swiper-slide-active .typing {opacity:1;display: inline-block;animation-name: cursor;animation-duration: 0.3s;animation-iteration-count: infinite;line-height: 1;padding: 0 5px 0 0;margin: 0 5px 0 0;	/* height: 45px;	width: 1px; */}
+.slide_b .swiper-slide-active .imgs img{animation: zoomIn 5s ease-in-out forwards;}
