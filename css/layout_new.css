@@ -542,6 +542,7 @@ article.business03 .con .con_slide{flex-basis:100%;max-width: 100%;padding: 20px
 	.sec01_mobile_menu ul > li > .bott > p {font-size: 13.5px;line-height: 1.5;}
 	.dim-bg{visibility:hidden;position:fixed;top:60px;left:0px;width:100%;height:100%;background:rgba(0,0,0,.45);z-index:10;transition:all .3s ease-in;}
 	.dim-bg.on{visibility:visible;opacity:1;}
+	.gnb-bg{display:none;}
 }
 
 @media screen and (max-width:840px){
